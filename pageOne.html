@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Smart Product Calculater</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="css\img\favicon.ico">
+
+  </head>
+  <body>
+    <div class="header">
+
+      <h2>Products store</h2>
+      <p>
+        manage and store your productes seftly and free of charge .
+      </p>
+      <img src="E:\fullProject\Manger\css\img\laptop.png" alt="icon">
+
+    </div>
+<div class="Manger">
+
+<div class="inputs">
+  <input type="text" name="title" placeholder="title" id="title">
+<div class="numInput">
+  <input onkeyup="return getTotal()" type="number" name="price" placeholder="price" id="price">
+  <input onkeyup="return getTotal()" type="number" name="taxes"  placeholder="taxes" id="taxes">
+  <input onkeyup="return getTotal()" type="number" name="ads"placeholder="ads" id="ads">
+  <input onkeyup="return getTotal()" type="number" name="discount" placeholder="discount" id="discount">
+  <small id="total"></small>
+</div>
+<input type="number" name="" placeholder="count" id="count">
+<input type="text" name="" placeholder="category" id="category">
+<button type="submit" name="button" id="submit">Create</button>
+</div>
+<div class="outPut">
+  <div class="searchBlock">
+    <input onkeyup="return searchData(this.value)" type="text" name="search" placeholder="search" id="search">
+  </div>
+  <div class="btnSearch">
+    <button onclick="getSearchMood(this.id)" type="submit" name="searchTitle" id="searchTitle"> Search By Title</button>
+    <button onclick="getSearchMood(this.id)" type="submit" name="searchCategory" id="searchCategory"> Search By category</button>
+  </div>
+  <div id="deletAll">
+
+  </div>
+<table>
+  <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Taxes</th>
+        <th>ADS</th>
+        <th>Discount</th>
+        <th>Total</th>
+        <th>Category</th>
+        <th>UpDate</th>
+        <th>DELET</th>
+      </tr>
+     </thead>
+     <tbody id="tBody">
+
+     </tbody>
+</table>
+
+</div>
+
+
+</div>
+
+  <div class="footer">
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/">Twitter</a>
+    <a class="footer-link" href="https://www.appbrewery.co/">contact us</a>
+    <p class="end">©  Devolpe to you by KhamisOO.</p>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="smartProduct.js" charset="utf-8"></script>
+
+  </body>
+</html>
